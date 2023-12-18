@@ -1,7 +1,6 @@
-package com.implementsClasses;
+package dao;
 
-import com.domainClasses.Customer;
-import com.interfaces.ICustomerService;
+import entity.Customer;
 
 public class CustomerService implements ICustomerService {
 

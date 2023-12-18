@@ -1,6 +1,6 @@
-package com.interfaces;
+package dao;
 
-import com.domainClasses.Vehicle;
+import entity.Vehicle;
 
 public interface IVehicleService {
 

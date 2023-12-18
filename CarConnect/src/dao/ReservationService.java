@@ -1,7 +1,6 @@
-package com.implementsClasses;
+package dao;
 
-import com.domainClasses.Reservation;
-import com.interfaces.IReservationService;
+import entity.Reservation;
 
 public class ReservationService implements IReservationService {
 

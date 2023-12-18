@@ -1,6 +1,6 @@
-package com.interfaces;
+package dao;
 
-import com.domainClasses.Reservation;
+import entity.Reservation;
 
 public interface IReservationService {
 

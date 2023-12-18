@@ -1,7 +1,6 @@
-package com.implementsClasses;
+package dao;
 
-import com.domainClasses.Vehicle;
-import com.interfaces.IVehicleService;
+import entity.Vehicle;
 
 public class VehicleService implements IVehicleService {
 

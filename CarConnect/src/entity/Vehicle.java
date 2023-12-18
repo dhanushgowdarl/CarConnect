@@ -1,4 +1,4 @@
-package com.domainClasses;
+package entity;
 
 public class Vehicle {
 

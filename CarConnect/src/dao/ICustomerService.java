@@ -1,6 +1,6 @@
-package com.interfaces;
+package dao;
 
-import com.domainClasses.Customer;
+import entity.Customer;
 
 public interface ICustomerService {
 

@@ -1,6 +1,6 @@
-package com.interfaces;
+package dao;
 
-import com.domainClasses.Admin;
+import entity.Admin;
 
 public interface IAdminService {
 

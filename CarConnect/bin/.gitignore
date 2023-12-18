@@ -2,3 +2,6 @@
 /com/
 /main/
 /module-info.class
+/entity/
+/dao/
+/Exceptions/

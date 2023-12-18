@@ -1,7 +1,6 @@
-package com.implementsClasses;
+package dao;
 
-import com.domainClasses.Admin;
-import com.interfaces.IAdminService;
+import entity.Admin;
 
 public class AdminService implements IAdminService {
 
