@@ -12,6 +12,10 @@ public interface IReservationService {
 
 	Reservation updateReservation(String reservationData);
 
-	Reservation cancelReservation(int reservationId);
+	boolean cancelReservation(int reservationId);
+
+	boolean createReservation(Reservation reservation);
+
+	Reservation updateReservation(Reservation reservation);
 
 }

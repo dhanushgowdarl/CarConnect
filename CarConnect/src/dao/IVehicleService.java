@@ -4,14 +4,18 @@ import entity.Vehicle;
 
 public interface IVehicleService {
 
-	Vehicle getVehicleIdbyId(int vehicleId);
-
 	Vehicle getAvailableVehicles();
 
 	Vehicle addVehicle(String vehicleData);
 
 	Vehicle updateVehicle(String vehicleData);
 
-	Vehicle removeVehicle(int vehicleId);
+	boolean removeVehicle(int vehicleId);
+
+	Vehicle updateVehicle(Vehicle vehicle);
+
+	boolean addVehicle(Vehicle vehicle);
+
+	Vehicle getVehiclebyId(int vehicleId);
 
 }

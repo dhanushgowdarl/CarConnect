@@ -12,5 +12,7 @@ public interface IAdminService {
 
 	Admin updateAdmin(String adminData);
 
-	Admin deleteAdmin(int adminId);
+	boolean deleteAdmin(int adminId);
+
+	boolean registerAdmin(Admin admin);
 }

@@ -1,7 +1,5 @@
 package entity;
 
-import java.util.Date;
-
 public class Customer {
 
 	private int customerID;
@@ -12,13 +10,13 @@ public class Customer {
 	private String address;
 	private String username;
 	private String password;
-	private Date registrationDate;
+	private String registrationDate;
 
 	public Customer() {
 	}
 
 	public Customer(int customerID, String firstName, String lastName, String email, String phoneNumber, String address,
-			String username, String password, Date registrationDate) {
+			String username, String password, String registrationDate) {
 		this.customerID = customerID;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -96,11 +94,11 @@ public class Customer {
 		this.password = password;
 	}
 
-	public Date getRegistrationDate() {
+	public String getRegistrationDate() {
 		return registrationDate;
 	}
 
-	public void setRegistrationDate(Date registrationDate) {
+	public void setRegistrationDate(String registrationDate) {
 		this.registrationDate = registrationDate;
 	}
 

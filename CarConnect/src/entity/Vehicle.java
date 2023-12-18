@@ -76,7 +76,7 @@ public class Vehicle {
 		this.registrationNumber = registrationNumber;
 	}
 
-	public boolean isAvailability() {
+	public boolean getAvailability() {
 		return availability;
 	}
 
@@ -91,4 +91,5 @@ public class Vehicle {
 	public void setDailyRate(double dailyRate) {
 		this.dailyRate = dailyRate;
 	}
+
 }

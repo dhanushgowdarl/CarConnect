@@ -4,13 +4,13 @@ import entity.Customer;
 
 public interface ICustomerService {
 
-	Customer getCustomerById(int customerId);
+	Customer getCustomerById(int customerId) throws Exception;
 
 	Customer getCustomerByUsername(String username);
 
-	Customer registerCustomer(Customer customerData);
+	boolean registerCustomer(Customer customerData);
 
 	Customer updateCustomer(Customer customerData);
 
-	Customer deleteCustomer(int customerId);
+	boolean deleteCustomer(int customerId);
 }
