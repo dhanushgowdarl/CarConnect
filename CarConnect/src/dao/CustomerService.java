@@ -1,7 +1,6 @@
 package dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -72,7 +71,7 @@ public class CustomerService implements ICustomerService {
 			preparedStatement.setString(6, customer.getAddress());
 			preparedStatement.setString(7, customer.getUsername());
 			preparedStatement.setString(8, customer.getPassword());
-			preparedStatement.setDate(9, (Date) customer.getRegistrationDate());
+			preparedStatement.setString(9, customer.getRegistrationDate());
 			preparedStatement.executeUpdate();
 
 			int rowsAffected = preparedStatement.executeUpdate();
@@ -115,7 +114,7 @@ public class CustomerService implements ICustomerService {
 		customer.setAddress(resultSet.getString("address"));
 		customer.setUsername(resultSet.getString("username"));
 		customer.setPassword(resultSet.getString("password"));
-		customer.setRegistrationDate(resultSet.getDate("registrationDate"));
+		customer.setRegistrationDate(resultSet.getString("registrationDate"));
 		return customer;
 	}
 

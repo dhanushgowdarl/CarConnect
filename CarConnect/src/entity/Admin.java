@@ -96,11 +96,11 @@ public class Admin {
 		return joinDate;
 	}
 
-	public void setJoinDate(String joinDate) {
-		this.joinDate = joinDate;
+	public void setJoinDate(String date) {
+		this.joinDate = date;
 	}
 
-	public boolean authenticate(String enteredPassword) {
+	public boolean authenticateString(String enteredPassword) {
 		return this.password.equals(enteredPassword);
 	}
 }
