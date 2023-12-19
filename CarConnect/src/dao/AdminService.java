@@ -32,14 +32,14 @@ public class AdminService implements IAdminService {
 	}
 
 	@Override
-	public Admin getAdminById(int adminId) {
+	public Admin getAdminById(int adminiD) {
 		try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ADMIN_BY_ID)) {
-			preparedStatement.setInt(1, adminId);
+			preparedStatement.setInt(1, adminiD);
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
 				if (resultSet.next()) {
 					return mapResultSetToAdmin(resultSet);
 				} else {
-					throw new AdminNotFoundException("Admin with ID " + adminId + " not found");
+					throw new AdminNotFoundException("Admin with ID " + adminiD + " not found");
 				}
 			} catch (AdminNotFoundException ex) {
 				Logger.getLogger(AdminService.class.getName()).log(Level.SEVERE, null, ex);
